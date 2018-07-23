@@ -1,4 +1,16 @@
+#!/bin/bash
 # set timezone lang local
+
+# Choose the  mirror
+# 选择镜像源
+mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
+cat /etc/pacman.d/mirrorlist.backup | grep .cn >> /etc/pacman.d/mirrorlist
+
+# Update mirror
+# 更新镜像包
+pacman -Syy
+
+pacman --noconfirm --needed -S wget
 
 passwd
 
