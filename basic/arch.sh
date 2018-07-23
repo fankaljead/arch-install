@@ -22,7 +22,8 @@
 
 # Choose the  mirror
 # 选择镜像源
-pacman-mirrors -f
+mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
+cat /etc/pacman.d/mirrorlist.backup | grep .cn >> /etc/pacman.d/mirrorlist
 
 # Update mirror
 # 更新镜像包
