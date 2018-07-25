@@ -18,3 +18,5 @@ bash software.sh
 ## 安装之后的截图 ##
 
 ![](./arch.jpg)
+
+![](./arch2.jpg)
