@@ -1,11 +1,17 @@
 #!/bin/bash
 
+echo "----------------------------------------------------"
+echo "----------------add the Chinese aur-----------------"
+echo "----------------------------------------------------"
 echo '[archlinuxcn]' >> /etc/pacman.conf
 echo 'Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch' >> /etc/pacman.conf
 pacman -Syy
 
+echo "----------------------------------------------------"
+echo "--------installing some basic softwares-------------"
+echo "----------------------------------------------------"
 # 必备软件
-pacman -S --noconfirm vim git ranger neofetch rofi shadowsocks privoxy jdk nodejs go python-pip
+pacman -S --noconfirm vim git ranger neofetch rofi shadowsocks privoxy jdk nodejs go python-pip linux-header zsh cmake
 
 pip install neovim
 
@@ -16,5 +22,5 @@ yaourt -S --noconfirm google-chrome netease-cloud-music
 # 字体
 pacman -S --noconfirm noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-inconsolata ttf-linux-libertine
 
-pacman -S --noconfirm xorg-xinit xorg-server i3-gaps i3status rxvt-unicode terminator arandr lightdm lightdm-gtk-greeter pcmanfm feh nitrogen compton dmenu yaourt 
+pacman -S --noconfirm xorg-xinit xorg-server i3-gaps i3status i3lock-fancy rxvt-unicode terminator arandr lightdm lightdm-gtk-greeter pcmanfm feh nitrogen compton dmenu yaourt mpd mpv ncmpcpp
 
