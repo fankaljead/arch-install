@@ -24,3 +24,6 @@ pacman -S --noconfirm noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-inconsolata
 
 pacman -S --noconfirm xorg-xinit xorg-server i3-gaps i3status i3lock-fancy rxvt-unicode terminator arandr lightdm lightdm-gtk-greeter pcmanfm feh nitrogen compton dmenu yaourt mpd mpv ncmpcpp
 
+# 配置桌面环境的基本设置
+wget https://github.com/fankaljead/arch-install/blob/master/desktop/install.sh
+bash install.sh
