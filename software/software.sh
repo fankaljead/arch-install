@@ -11,7 +11,7 @@ echo "----------------------------------------------------"
 echo "--------installing some basic softwares-------------"
 echo "----------------------------------------------------"
 # 必备软件
-pacman -S --noconfirm vim git ranger neofetch rofi shadowsocks privoxy jdk nodejs go python-pip linux-header zsh cmake
+pacman -S --noconfirm vim git ranger neofetch rofi shadowsocks privoxy jdk nodejs go python-pip linux-header zsh cmake highlight
 
 pip install neovim
 
