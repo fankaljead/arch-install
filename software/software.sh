@@ -26,4 +26,6 @@ pacman -S --noconfirm xorg-xinit xorg-server i3-gaps i3status i3lock-fancy rxvt-
 
 # 配置桌面环境的基本设置
 wget https://raw.githubusercontent.com/fankaljead/arch-install/master/desktop/install.sh
+
 bash install.sh
+
